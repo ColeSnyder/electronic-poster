@@ -1,0 +1,30 @@
+<video [autoplay]="true" [muted]="true" [loop]="true" src="{{videoSource}}">
+    <source type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<header class="quoteBox" id="quoteBox">
+    <h1>
+      <span>"{{displayedQuote}}"</span>
+    </h1>
+    <p>{{author}}</p>
+</header>
+<div class="weatherBox displayBox" id="weatherBox">
+  Temp: {{temperature}} f
+  <br>
+  Wind: {{windSpeed}} mph
+  <br>
+  Weather: {{condition}}
+</div>
+<div class="timeBox displayBox" id="timeBox">
+  Time: {{hour}}:{{minutes}}
+</div>
+<div class="authorBox displayBox" id="authorBoxx">
+
+</div>
+
+<div class="linkBox"> 
+  <a class="navitem" id="classic" (click)="setClassicTheme()">{{classicThemeLinkText}}</a><br>
+  <a class="navitem" id="cyberpunk" (click)="setCyberPunkTheme()">{{cyberpunkThemeLinkText}}</a><br>
+  <a class="navitem" id="space" (click)="setSpaceTheme()">{{spaceThemeLinkText}}</a><br>
+  <a class="navitem" id="color" (click)="setColorTheme()">{{colorThemeLinkText}}</a>
+</div>

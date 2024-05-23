@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Kenia&family=Permanent+Marker&family=Raleway:wght@500&family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fjalla+One&family=Kenia&family=Raleway:wght@500&family=Space+Grotesk:wght@300&display=swap');
+@import "../breakpoints.scss";
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 100%;
+  filter: brightness(40%);
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+//quote area ===========================================
+.quoteBox {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.quoteBoxClassic {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2em;
+  @include media('<=phone') {
+    font-size: 1em;
+  };
+  @include media('>phone', '<=425px') {
+    font-size: 1em;
+  };
+  @include media('>425px', '<=tablet') {
+    font-size: 1.3em;
+  };
+  @include media('>tablet', '<=desktop') {
+    font-size: 1.5em;
+  };
+}
+
+.quoteBoxCyberpunk {
+  color: yellow;
+  font-family: 'Caveat';
+  font-size: 2.75em;
+  @include media('<=phone') {
+    font-size: 1em;
+  };
+  @include media('>phone', '<=425px') {
+    font-size: 1em;
+  };
+  @include media('>425px', '<=tablet') {
+    font-size: 1.3em;
+  };
+  @include media('>tablet', '<=desktop') {
+    font-size: 1.5em;
+  };
+}
+
+.quoteBoxSpace {
+  color: #82e6ff;
+  font-family: 'Space Grotesk', 'Caveat';
+  font-size: 2em;
+  @include media('<=phone') {
+    font-size: 1em;
+  };
+  @include media('>phone', '<=425px') {
+    font-size: 1em;
+  };
+  @include media('>425px', '<=tablet') {
+    font-size: 1.3em;
+  };
+  @include media('>tablet', '<=desktop') {
+    font-size: 1.5em;
+  };
+}
+
+.quoteBoxColor {
+  color: #ff9500;
+  font-family: 'Fjalla One', 'Caveat';
+  font-size: 2.25em;
+  @include media('<=phone') {
+    font-size: 1em;
+  };
+  @include media('>phone', '<=425px') {
+    font-size: 1em;
+  };
+  @include media('>425px', '<=tablet') {
+    font-size: 1.3em;
+  };
+  @include media('>tablet', '<=desktop') {
+    font-size: 1.5em;
+  };
+}
+
+//end quote area =======================================
+
+//weather box section ==================================
+.weatherBox {
+  right: 0;
+  bottom: 0;
+  font-size: 2.5em;
+  padding: 10px;
+  margin: 20px;
+  position: absolute;
+  border-radius: 3px;
+  @include media('<=phone') {
+    font-size: 1.1em;
+  };
+  @include media('>phone', '<=425px') {
+    font-size: 1em;
+  };
+  @include media('>425px', '<=tablet') {
+    font-size: 1.3em;
+  };
+  @include media('>tablet', '<=desktop') {
+    font-size: 1.5em;
+  };
+}
+
+.weatherBoxClassic {
+  font-family: 'Raleway', sans-serif;
+  border: 5px solid white;
+  color: white;
+}
+
+.weatherBoxCyberpunk {
+  font-family: 'Caveat', sans-serif;
+  border: 3px solid #0ac6ff;
+  background-color: black;
+  color: #ff00c8;
+}
+
+.weatherBoxSpace {
+  font-family: 'Space Grotesk', sans-serif;
+  border: 3px solid #0ac6ff;
+  background-color: #0e1114;
+  color: #82e6ff;
+}
+
+.weatherBoxColor {
+  font-family: 'Fjalla One', sans-serif;
+  border: 3px solid #37fc21;
+  background-color:cyan;
+  color:firebrick;
+}
+//end weather box section =============================
+
+//time box section ====================================
+.timeBox {
+  left: 0;
+  bottom: 0;
+  font-size: 2.5em;
+  padding: 10px;
+  margin: 20px;
+  position: absolute;
+  border-radius: 3px;
+  @include media('<=phone') {
+    font-size: 1.1em;
+  };
+  @include media('>phone', '<=425px') {
+    font-size: 1em;
+  };
+  @include media('>425px', '<=tablet') {
+    font-size: 1.3em;
+  };
+}
+
+.timeBoxClassic {
+  font-family: 'Raleway', sans-serif;
+  border: 5px solid white;
+  color: white;
+}
+
+.timeBoxCyberpunk {
+  font-family: 'Caveat', sans-serif;
+  border: 3px solid #0ac6ff;
+  background-color: black;
+  color: #ff00c8;
+}
+
+.timeBoxSpace {
+  font-family: 'Space Grotesk', sans-serif;
+  border: 3px solid #0ac6ff;
+  background-color: #0e1114;
+  color: #82e6ff;
+}
+
+.timeBoxColor {
+  font-family: 'Fjalla One', sans-serif;
+  border: 3px solid #37fc21;
+  background-color:cyan;
+  color:firebrick;
+}
+//end time box section ===============================
+
+.linkBox {
+  left: 0;
+  top: 0;
+  font-size: 2em;
+  position: absolute;
+  padding: 10px;
+  margin: 20px;
+  @include media('<=phone') {
+    font-size: 1.3em;
+  };
+  @include media('>phone', '<=425px') {
+    font-size: 1.5em;
+  };
+  @include media('>425px', '<=tablet') {
+    font-size: 1.3em;
+  };
+}
+
+//author section =====================================
+
+.authorBox {
+  right: 0;
+  top: 0;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  @include media('<=phone') {
+    width: 100px;
+    height: 100px;
+  };
+  @include media('>phone', '<=425px') {
+    width: 150px;
+    height: 150px;  
+  };
+  @include media('>425px', '<=tablet') {
+    width: 150px;
+    height: 150px;    
+  };
+}
+
+.authorBoxClassic {
+  border: 5px solid white;
+}
+
+.authorBoxCyberpunk {
+  border: 3px solid #0ac6ff;
+}
+
+.authorBoxSpace {
+  border: 3px solid #0ac6ff;
+}
+
+.authorBoxColor {
+  border: 3px solid #37fc21;
+}
+
+#authorBoxx {
+
+}
+
+//end author section =================================
+
+
+//link section =======================================
+.displayBox {
+    position: absolute;
+    padding: 10px;
+    margin: 20px;
+}
+
+.navitem {
+  text-decoration: none;   
+  color: white;
+  opacity: 70%;
+}
+
+.navitem:hover {
+  opacity: 100%;
+}
+ 
+.navitem:hover {
+     cursor: pointer;
+}
+
+#classic {
+  font-family: 'Bebas Neue', cursive;
+}
+
+#cyberpunk {
+  color: yellow;
+  font-family: 'Caveat';
+}
+
+#space {
+  color: #82e6ff;
+  font-family: 'Space Grotesk';
+}
+
+#color {
+  font-family: 'Fjalla One', 'Caveat';
+  color:orangered;
+}
+
+#color:hover {
+  color: purple;
+}
+
+//end link section ===================================

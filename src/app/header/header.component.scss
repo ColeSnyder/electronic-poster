@@ -1,0 +1,25 @@
+.linkBox {
+    left: 0;
+    top: 0;
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+}
+
+#cyberpunk {
+    color: yellow;
+    font-family: 'Permanent Marker', 'Caveat';
+}
+  
+#space {
+    color: #82e6ff;
+    font-family: 'Space Grotesk';
+}
+  
+.navitem:hover {
+    cursor: pointer;
+}
